@@ -791,6 +791,8 @@ public class DefaultMessageStore implements MessageStore {
         return CompletableFuture.completedFuture(getMessage(group, topic, queueId, offset, maxMsgNums, messageFilter));
     }
 
+
+
     @Override
     public GetMessageResult getMessage(final String group, final String topic, final int queueId, final long offset,
         final int maxMsgNums, final int maxTotalMsgSize, final MessageFilter messageFilter) {
